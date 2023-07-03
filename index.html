@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David's tip calculator</title>
+</head>
+<body>
+<div id ="container">
+  <h1>David's Tip Calculator</h1>
+  <div id="calculator">
+    <form>
+      <p>How much did the meal cost?
+        <p>
+          £ <input id="billTotal" type="text" placeholder="Bill Amount">
+          <p>What is my desired level of tipping?<p>
+            <select id="tipPercentage">
+                <option disabled selected value="0">Select how you value your tip</option>
+                <option value="0.2">20&#37; I'm not from Yorkshire and I feel Generous</option>
+                <option value="0.15">15&#37; What an awesome meal!!!</option>
+                <option value="0.05">5&#37; Great meal, I'd come back, but I'm cheap</option>
+                <option value="0.01">1&#37; Service was that bad I'm going to make it obvious I don't like them</option>
+            </select>
+    </form>
+        <button type="button" id="calculate">Calculate the Tip!</button>
+  </div>
+
+    <div id="totalTip">
+        <li>The total tip will be £<span id="tip">0.00</span></li>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
